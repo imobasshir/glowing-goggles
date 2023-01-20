@@ -37,10 +37,10 @@ fun  PracticeModifier(text: String) {
     }
 }
 
-@Preview
-@Composable
-fun PreviewModifierEg() {
-    MyApplicationTheme {
-        PracticeModifier(text = "Hello, Android Compose")
-    }
-}
+//@Preview
+//@Composable
+//fun PreviewModifierEg() {
+//    MyApplicationTheme {
+//        PracticeModifier(text = "Hello, Android Compose")
+//    }
+//}

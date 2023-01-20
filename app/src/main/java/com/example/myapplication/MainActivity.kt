@@ -18,9 +18,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyApplicationTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-//                    Greeting("Android")
-                    BirthdayGreetingWithImage(message = "Happy Birthday Mobasshir!", from = " - from Ibrahim")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    NextPrev()
                 }
             }
         }
@@ -40,7 +42,7 @@ fun DefaultPreview() {
     }
 }
 
-@Preview
+@Preview(showBackground = false)
 @Composable
 fun BirthdayCardPreview() {
     MyApplicationTheme {
@@ -53,5 +55,29 @@ fun BirthdayCardPreview() {
 fun CardPreview() {
     MyApplicationTheme {
         Card()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DiceRollerAppPreview() {
+    MyApplicationTheme {
+        DiceWithButtonAndImage()
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun NextPrevPreview() {
+    MyApplicationTheme {
+        NextPrev()
+    }
+}
+
+@Preview
+@Composable
+fun PreviewModifierEg() {
+    MyApplicationTheme {
+        PracticeModifier(text = "Hello, Android Compose")
     }
 }
