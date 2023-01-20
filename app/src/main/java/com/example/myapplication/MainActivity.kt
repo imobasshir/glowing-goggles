@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NextPrev()
+                    TipTimeScreen()
                 }
             }
         }
@@ -74,10 +74,26 @@ fun NextPrevPreview() {
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun PreviewModifierEg() {
     MyApplicationTheme {
         PracticeModifier(text = "Hello, Android Compose")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun QuadrantComposePreview() {
+    MyApplicationTheme {
+        QuadrantCompose()
+    }
+}
+
+@Preview
+@Composable
+fun TipTimeScreenPreview() {
+    MyApplicationTheme {
+        TipTimeScreen()
     }
 }
