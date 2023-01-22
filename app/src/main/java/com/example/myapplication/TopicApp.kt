@@ -4,7 +4,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
@@ -43,14 +42,13 @@ fun TopicGrid(modifier: Modifier = Modifier) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
     Card(elevation = CardDefaults.cardElevation(4.dp)) {
         Row {
             Box {
                 Image(
-                    painter = painterResource(id = topic.imageRes),
+                    painter = painterResource(topic.imageRes),
                     contentDescription = null,
                     modifier = modifier
                         .size(width = 68.dp, height = 68.dp)
@@ -61,11 +59,11 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
 
             Column {
                 Text(
-                    text = stringResource(id = topic.name),
+                    text = stringResource(topic.name),
                     modifier = Modifier.padding(
                         start = 16.dp,
                         top = 16.dp,
-                        end = 16.dp,
+                        end = 8.dp,
                         bottom = 8.dp
                     )
                 )

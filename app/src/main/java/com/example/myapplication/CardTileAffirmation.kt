@@ -37,7 +37,6 @@ fun AffirmationList(affirmationList: List<Affirmation>) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AffirmationCard(affirmation: Affirmation) {
     Card(
