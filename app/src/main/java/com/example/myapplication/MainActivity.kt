@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TipTimeScreen()
+                    AffirmationApp()
                 }
             }
         }
@@ -95,5 +95,13 @@ fun QuadrantComposePreview() {
 fun TipTimeScreenPreview() {
     MyApplicationTheme {
         TipTimeScreen()
+    }
+}
+
+@Preview
+@Composable
+fun AffirmationPreview() {
+    MyApplicationTheme {
+        AffirmationApp()
     }
 }

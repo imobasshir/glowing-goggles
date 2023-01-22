@@ -71,10 +71,10 @@ fun NextPrev() {
     }
 }
 
-//@Preview(showBackground = true)
-//@Composable
-//fun NextPrevPreview() {
-//    MyApplicationTheme {
-//        NextPrev()
-//    }
-//}
+@Preview(showBackground = true)
+@Composable
+private fun NextPrevPreviewFile() {
+    MyApplicationTheme {
+        NextPrev()
+    }
+}
