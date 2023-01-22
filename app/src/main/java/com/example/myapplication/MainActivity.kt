@@ -105,3 +105,11 @@ fun AffirmationPreview() {
         AffirmationApp()
     }
 }
+
+@Preview
+@Composable
+fun TpcPreview() {
+    MyApplicationTheme {
+        TopicGrid()
+    }
+}
