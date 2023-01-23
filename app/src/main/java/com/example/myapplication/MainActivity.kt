@@ -113,3 +113,11 @@ fun TpcPreview() {
         TopicGrid()
     }
 }
+
+@Preview(showBackground = false)
+@Composable
+private fun MaterialDesignUsePreviewMain() {
+    MyApplicationTheme {
+        MaterialDesignUse()
+    }
+}
