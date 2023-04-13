@@ -34,7 +34,7 @@ fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DefaultPreview() {
     MyApplicationTheme {
@@ -42,7 +42,7 @@ fun DefaultPreview() {
     }
 }
 
-@Preview(showBackground = false)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun BirthdayCardPreview() {
     MyApplicationTheme {
@@ -50,7 +50,7 @@ fun BirthdayCardPreview() {
     }
 }
 
-@Preview(showBackground = false)
+@Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun CardPreview() {
     MyApplicationTheme {
@@ -58,7 +58,7 @@ fun CardPreview() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun DiceRollerAppPreview() {
     MyApplicationTheme {
@@ -66,7 +66,7 @@ fun DiceRollerAppPreview() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun NextPrevPreview() {
     MyApplicationTheme {
@@ -74,7 +74,7 @@ fun NextPrevPreview() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun PreviewModifierEg() {
     MyApplicationTheme {
@@ -82,7 +82,7 @@ fun PreviewModifierEg() {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun QuadrantComposePreview() {
     MyApplicationTheme {
@@ -90,7 +90,7 @@ fun QuadrantComposePreview() {
     }
 }
 
-@Preview
+@Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun TipTimeScreenPreview() {
     MyApplicationTheme {
@@ -98,7 +98,7 @@ fun TipTimeScreenPreview() {
     }
 }
 
-@Preview
+@Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun AffirmationPreview() {
     MyApplicationTheme {
@@ -106,7 +106,7 @@ fun AffirmationPreview() {
     }
 }
 
-@Preview
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun TpcPreview() {
     MyApplicationTheme {
@@ -114,7 +114,7 @@ fun TpcPreview() {
     }
 }
 
-@Preview(showBackground = false)
+@Preview(showSystemUi = true, showBackground = true)
 @Composable
 private fun MaterialDesignUsePreviewMain() {
     MyApplicationTheme {

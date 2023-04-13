@@ -94,7 +94,7 @@ fun MaterialDesignUse() {
     }
 }
 
-@Preview(showBackground = false)
+@Preview(showSystemUi = true, showBackground = true)
 @Composable
 private fun MaterialDesignUsePreview() {
     MyApplicationTheme {
